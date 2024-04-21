@@ -41,7 +41,7 @@ Enlace de la documentación oficial!
 https://en.bem.info/methodology/quick-start/*/
 
 /*Sección Menu*/
-.tudo{
+.todocont{
     padding: 20px 50px;
 }
 section.menu{
@@ -207,6 +207,7 @@ section.hobbies{
 .experiencie__box{
     display: flex;
     margin:50px 0px;
+    gap: 10px;
 }
 .experience__img{
     width: 60%;
@@ -246,15 +247,53 @@ section.hobbies{
 .formcontato__contacto{
     display: flex;
     gap: 15px;
+
 }
-.formcontato--esquerda{
-    width: 100%;
+.formcontato__text{
+    height: 100%;
+}
+.formcontato__title{
+    font-weight: bolder;
+}
+.formcontato__subtext{
+    font-weight: 100;
 }
 
-
+.formcontato__form{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.formcontato__form .label{
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    background: #ffffff;
+    height: 50px;
+    padding: 5px 10px;
+    justify-content: end;
+}
+.formcontato__form .label input{
+    border: none;
+    border-bottom: 2px solid #ffffff;
+    transition: 1s all;
+    font-size: 18px;
+}
+.formcontato__form .formcontato__input:focus {
+    border-bottom: 2px solid #73A6EA; 
+    outline: none;
+}
+.formcontato__form .label span{
+    font-size: 15px;
+    color: #73A6EA;
+}
 /*footeer*/
 
 section.footer{
+   text-align: center;
+   justify-content: center;
+   background: #ffffff;
+   display: flex;
    
 }
 
@@ -300,6 +339,7 @@ Utiliza las referencias de los breakpoints @media abajo */
     gap: 10px;
 }
 /*Contacto*/
+
 
 @media (max-width: 425px) {
 
